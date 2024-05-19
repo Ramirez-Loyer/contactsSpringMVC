@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found</title>
+    <link href="../static/css/bootstrap.min.css" rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+    <link href="../static/css/style.css" rel="stylesheet" th:href="@{css/style.css}">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="error-template">
+                <h1>Oops!!!</h1>
+                <h2 class="alert alert-danger p-3">Requested page not found!</h2>
+                <div class="error-details">
+                    <img src="images/page404.jpg" class="centered-image"  style="width: 50%;" alt="not found">
+                </div>
+                <button class="404-button btn btn-success" onclick="returnHome()">Return Home</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    function returnHome(){
+    window.location.href="/index";
+    }
+</script>
+</body>
+</html>

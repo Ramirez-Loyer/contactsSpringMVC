@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr" layout:decorate="layout"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" xmlns:th="http://thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security5">
+<head>
+    <meta charset="utf-8">
+    <title>Accueil</title>
+    <link href="../static/bootstrap.min.css" rel="stylesheet" th:href="@{css/bootstrap.min.css}">
+</head>
+
+<body>
+<div layout:fragment="content">
+    <div class="container m-8">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                Aperçu de l'app
+            </div>
+
+            <div class="panel-body">
+                <div class="container d-flex justify-content-center align-items-center">
+                    <div>
+                        <img src="images/preview.jpg" class="img-responsive"  style="width: 90%;" alt="List Contacts">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="container">
+                        <div class="text-center">
+                            <a type="submit" class="btn btn-success btn-lg"  >Je veux m'inscrire ! </a>
+                        </div>
+                 </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
